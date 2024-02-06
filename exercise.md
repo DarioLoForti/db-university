@@ -55,3 +55,7 @@ FROM `departments`
 WHERE `id`
 
 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
+
+SELECT COUNT(\*) AS `numero_insegnanti_senza_telefono`
+FROM `teachers`
+WHERE `phone` IS NOT NULL
